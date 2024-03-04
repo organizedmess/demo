@@ -1,0 +1,13 @@
+<!-- <h1>THIS IS THE DETAIL PAGE </h1> -->
+
+<div class="detail-page">
+  
+  <h1>Name: <b>{{ product.name }}</b></h1>
+  <p>Description:<br>{{ product.description }}</p>
+  <p>${{ product.price }}</p>
+  
+  <p *ngIf = "product.available; else elseBlock">It is in Stock</p>
+  <ng-template #elseBlock>It is out of Stock</ng-template>
+
+</div>
+

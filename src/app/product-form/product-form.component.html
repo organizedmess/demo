@@ -1,0 +1,22 @@
+<form class="form" (ngSubmit)="onSubmitFunction()">
+    
+    <label for="form-name">Name</label>
+    <input type="text" id="form-name" [(ngModel)] = "name" name="name">
+    
+    <label for="form-price">Price</label>
+    <input type="text" id="form-price" [(ngModel)] = "price" name="price">
+    
+    <label for="form-description">Description</label>
+    <input type="text" id="form-description" [(ngModel)] = "description" name="description">
+    
+    <div>
+        <label for="Available">Avaliable</label>
+        <input type="checkbox" id="Available" [(ngModel)] = "available" name="available">
+    </div>
+    
+    <button type="submit">Add</button>
+</form>
+
+<p class="ack">Product Added!</p>
+
+

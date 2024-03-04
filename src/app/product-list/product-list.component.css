@@ -1,0 +1,41 @@
+.list{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul li{
+    display: flex;
+    text-decoration: none;
+    gap: 10px;
+    color: #000;
+}
+
+.list button:first-child {
+    width: 40%;
+    
+    list-style: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.ChangeColor{
+    background-color: #78ff78;
+}
+
+.delete-btn{
+    width: 5%;
+    
+    list-style: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: #ff3d3d;
+    border: 2px solid black;
+    cursor: pointer;
+}

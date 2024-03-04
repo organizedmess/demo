@@ -1,0 +1,6 @@
+<ul class = "list">
+    <li *ngFor = "let item of MainProductList"  >
+        <button [routerLink] = "['/product-list', item.id]" [ngClass]="{ChangeColor: item.available === true}" class="prod-btn">{{ item.name }}</button>
+        <button (click) = "OnDeleteFunction(item)" class="delete-btn" >DELETE</button>
+    </li>
+</ul>
